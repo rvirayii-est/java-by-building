@@ -8,7 +8,7 @@ program into a tested, database-backed, deployed REST API you can show to employ
 
 - 🧱 **One app, evolving every week** — each milestone is preserved so you can follow its history.
 - 🧪 **Tests tell you when you are done** — every lesson has verifiable completion criteria.
-- 🆓 **Free tools only** — JDK 21, Git, any editor. No Maven install (wrapper included). The database (H2) is one free `.jar`, downloaded by Maven: nothing to install.
+- 🆓 **Free tools only** — JDK 21, Git, any editor. No Maven install (wrapper included). The database (H2) is one free `.jar`, and from Week 9 Spring Boot is a set of free libraries: Maven downloads them, nothing to install.
 - 🎓 Built for beginners and TESDA trainees; useful to instructors ([curriculum](docs/CURRICULUM.md),
   [TESDA mapping](docs/TESDA-MAPPING.md)).
 
@@ -52,7 +52,15 @@ program into a tested, database-backed, deployed REST API you can show to employ
 | 30 | [The repository pattern](lessons/30-repository-pattern/README.md) | ✅ |
 | 31 | [Transactions](lessons/31-transactions/README.md) | ✅ |
 | 32 | [Migrations](lessons/32-migrations/README.md) — **Milestone M5** | ✅ |
-| 33–48 | See the [curriculum](docs/CURRICULUM.md) and [roadmap](ROADMAP.md) | 🚧 |
+| 33 | [How the web works](lessons/33-how-the-web-works/README.md) | ✅ |
+| 34 | [REST design](lessons/34-rest-design/README.md) | ✅ |
+| 35 | [JSON](lessons/35-json/README.md) | ✅ |
+| 36 | [Spring Boot "Hello"](lessons/36-spring-boot-hello/README.md) | ✅ |
+| 37 | [Controllers and services](lessons/37-controllers-and-services/README.md) | ✅ |
+| 38 | [Spring Data JPA](lessons/38-spring-data-jpa/README.md) | ✅ |
+| 39 | [Validation and errors](lessons/39-validation-and-errors/README.md) | ✅ |
+| 40 | [Testing with MockMvc](lessons/40-testing-with-mockmvc/README.md) — **Milestone M6** | ✅ |
+| 41–48 | See the [curriculum](docs/CURRICULUM.md) and [roadmap](ROADMAP.md) | 🚧 |
 
 ## How each lesson folder works
 ```
@@ -71,7 +79,7 @@ development): [docs/SPEC.md](docs/SPEC.md). Reference solutions are in each less
 ```
 ./mvnw -B verify                # reference solutions + tests
 ./mvnw -B -Pstudent test-compile # starters and exercises still compile
-bash scripts/run-examples.sh     # every example runs (finds or downloads the H2 jar for lessons 25-32)
+bash scripts/run-examples.sh     # every example runs (finds or downloads the H2 jar for lessons 25-34 and 36-40, the Jackson jars for lesson 35)
 ```
 
 ## Contributing & license

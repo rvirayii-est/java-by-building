@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>dev.javabybuilding</groupId>
+    <artifactId>java-by-building</artifactId>
+    <version>0.1.0</version>
+    <relativePath>../../../pom.xml</relativePath>
+  </parent>
+  <artifactId>l35-solution</artifactId>
+  <name>Lesson 35 (solution)</name>
+
+  <dependencies>
+    <!-- The H2 database: needed by the app from lesson 25 on (SQL practice now, JDBC later). -->
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+    </dependency>
+    <!-- Jackson (lesson 35): turns Java objects into JSON text and back. The version comes from the Spring Boot BOM in the root pom. -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+    </dependency>
+    <!-- Jackson does not know LocalDateTime on its own; this module teaches it the java.time types. -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.datatype</groupId>
+      <artifactId>jackson-datatype-jsr310</artifactId>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <!-- Keep the test output quiet: java.util.logging reads this file instead of printing every INFO line to the console. -->
+          <systemPropertyVariables>
+            <java.util.logging.config.file>${project.basedir}/src/test/resources/logging.properties</java.util.logging.config.file>
+          </systemPropertyVariables>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

@@ -36,9 +36,13 @@ Prerequisites: basic computer literacy, English reading, ability to install soft
 - **N2** Free tools only: JDK (OpenJDK/Temurin), a text editor or free IDE (VS Code, IntelliJ IDEA Community), Git.
   Early lessons need only a JDK and a terminal. Maven is added through the bundled `./mvnw` wrapper (no install).
   From lesson 25 the **H2** database (a single free `.jar`, in memory for tests and in a file for the app) is the only
-  extra dependency. Maven downloads it; there is no database server to install, and PostgreSQL/MySQL are explained, never required.
+  extra dependency until Week 9. Maven downloads it; there is no database server to install, and PostgreSQL/MySQL are explained, never required.
+  From lesson 35 the libraries are added one lesson at a time through Maven, never installed: Jackson (JSON, lesson 35), Spring Boot's web starter
+  and test starter (lesson 36), Spring Data JPA and Flyway (lesson 38), Bean Validation (lesson 39). Their versions are fixed in one place, the
+  Spring Boot BOM imported by the root `pom.xml` (Spring Boot **3.5.x**, Java 21), so a lesson `pom.xml` names a library and never its version.
 - **N3** Every published code example compiles and runs. CI enforces it (§8).
-- **N4** Frameworks arrive late and only when the pain they solve has been felt (no Spring before week 9).
+- **N4** Frameworks arrive late and only when the pain they solve has been felt (no Spring before week 9). Lessons 33-35 build the whole API with the JDK's
+  `HttpServer`/`HttpClient` (plus Jackson in 35); Spring Boot enters in lesson 36 to take that plumbing away.
 - **N5** No paid services, accounts or cloud credit required before week 12 (the deployment lesson offers free options).
   No database server, account or installer is needed in weeks 7-8: H2 runs inside the Java program.
 - **N6** Beginner-friendly: short sentences, define every new term on first use, show expected output.
@@ -52,7 +56,7 @@ Prerequisites: basic computer literacy, English reading, ability to install soft
 | A4 | Domain model: Product, Customer, Sale, SaleLine, StockMovement | Weeks 3–4 (M3) |
 | A5 | Save/load data to files | Week 5 (M4) |
 | A6 | Relational database persistence (H2, JDBC, repositories) with transactions and versioned migrations | Weeks 7–8 (M5) |
-| A7 | REST API (products, sales, reports) | Weeks 9–10 (M6) |
+| A7 | REST API (products, sales, reports) on Spring Boot, JPA and H2, validated and tested | Weeks 9–10 (M6) |
 | A8 | Authentication and roles (admin, cashier) | Week 11 |
 | A9 | Containerised, deployed, monitored service | Week 12 (M7) |
 
@@ -69,7 +73,7 @@ Every lesson `README.md` MUST contain, in this order:
 
 1. **Learning objectives** — verbs a test can check ("write", "explain", "fix").
 2. **Plain-English explanation** — concepts without jargon; new terms defined.
-3. **Runnable sample code** — in `examples/`, run with `java File.java` (lessons 25-32 add `-cp <H2 jar>`); CI-verified.
+3. **Runnable sample code** — in `examples/`, run with `java File.java` (lessons 25-32 and 38 add `-cp <H2 jar>`, lesson 35 needs the Jackson jars; `scripts/run-examples.sh` supplies both); CI-verified.
 4. **Step-by-step instructions** — numbered build steps for the app milestone.
 5. **Practical exercises** — small drills in `exercises/` (with tests).
 6. **Expected results** — exact output or test counts to compare against.
@@ -104,7 +108,7 @@ Each `starter|exercises|solution` is a Maven module. **Milestones** are preserve
 
 ## 8. CI
 GitHub Actions (`.github/workflows/ci.yml`): JDK 21, `./mvnw verify` (solutions + tests),
-`./mvnw -Pstudent test-compile` (starters/exercises compile), `scripts/run-examples.sh` (every example runs; it puts the H2 jar on the class path for lessons 25-32).
+`./mvnw -Pstudent test-compile` (starters/exercises compile), `scripts/run-examples.sh` (every example runs; it puts the H2 jar on the class path, and the Jackson jars for lesson 35).
 
 ## 9. Out of scope (for now)
 Front-end frameworks, microservices, cloud-vendor specifics, Kotlin/Android. A minimal HTML client may be

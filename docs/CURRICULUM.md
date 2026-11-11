@@ -13,8 +13,8 @@ Milestones (M1–M7) are runnable snapshots of the Inventory & Sales System.
 | 6 | Testing & professional practice | 21 JUnit & TDD ✅ · 22 Debugging ✅ · 23 Git & GitHub flow ✅ · 24 Logging & clean code ✅ | Week 6 review in lesson 24 |
 | 7 | Databases I | 25 Relational thinking & ERD ✅ · 26 SQL basics ✅ · 27 Joins & reports ✅ · 28 Schema design for the shop ✅ | Week 7 complete (schema designed and tested) |
 | 8 | Databases II | 29 JDBC ✅ · 30 Repository pattern ✅ · 31 Transactions (a sale is all-or-nothing) ✅ · 32 Migrations ✅ | **M5** Database-backed app ✅ (end of lesson 32) |
-| 9 | HTTP & REST, Spring Boot intro | 33 How the web works · 34 REST design · 35 JSON · 36 Spring Boot "Hello" | |
-| 10 | Spring Boot | 37 Controllers/services · 38 Spring Data JPA · 39 Validation & errors · 40 Testing with MockMvc | **M6** REST API |
+| 9 | HTTP & REST, Spring Boot intro | 33 How the web works ✅ · 34 REST design ✅ · 35 JSON ✅ · 36 Spring Boot "Hello" ✅ | |
+| 10 | Spring Boot | 37 Controllers/services ✅ · 38 Spring Data JPA ✅ · 39 Validation & errors ✅ · 40 Testing with MockMvc ✅ | **M6** REST API ✅ (end of lesson 40) |
 | 11 | Security & quality | 41 Auth basics · 42 Roles (admin/cashier) · 43 CI pipeline · 44 API docs (OpenAPI) | |
 | 12 | Ship it | 45 Docker · 46 Deploy · 47 Monitoring & health checks · 48 Capstone & portfolio | **M7** Deployed application |
 
@@ -31,4 +31,4 @@ Each lesson ≈ 5 hours (guided + lab); 48 lessons ≈ 240 h. Weeks 1, 6 and 12 
 | 12 | Capstone demo: deployed app + README + 5-minute walkthrough |
 
 ## Current implementation status
-Lessons 01–32 and milestones M1, M2, M3, M4 and M5 are complete and CI-verified. Everything else is planned in [ROADMAP.md](../ROADMAP.md).
+Lessons 01–40 and milestones M1, M2, M3, M4, M5 and M6 are complete and CI-verified. Everything else is planned in [ROADMAP.md](../ROADMAP.md).

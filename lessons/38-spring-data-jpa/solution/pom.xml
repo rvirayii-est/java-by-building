@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>dev.javabybuilding</groupId>
+    <artifactId>java-by-building</artifactId>
+    <version>0.1.0</version>
+    <relativePath>../../../pom.xml</relativePath>
+  </parent>
+  <artifactId>l38-solution</artifactId>
+  <name>Lesson 38 (solution)</name>
+
+  <properties>
+    <!-- Keep the names of method parameters in the .class files: Spring needs them to match /products/{name} to a parameter
+         called name. (The Spring Boot parent pom sets this for you; this course has its own parent, so it is set here.) -->
+    <maven.compiler.parameters>true</maven.compiler.parameters>
+  </properties>
+
+  <dependencies>
+    <!-- The H2 database: needed by the app from lesson 25 on (SQL practice now, JDBC later). -->
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+    </dependency>
+    <!-- Spring Boot's web starter (lesson 36). -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <!-- Spring Data JPA (lesson 38): JPA (the standard way to map Java objects to tables), Hibernate (the library that does it),
+         Spring Data (repositories you only declare) and HikariCP (a pool of database connections), all in one starter. -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-jpa</artifactId>
+    </dependency>
+    <!-- Flyway (lesson 38): the professional version of the Migrator you wrote in lesson 32. It reads the SAME db/migration files.
+         Spring Boot runs it at start-up when it is on the class path. -->
+    <dependency>
+      <groupId>org.flywaydb</groupId>
+      <artifactId>flyway-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <finalName>shop-api</finalName>
+    <plugins>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <!-- Mockito (inside spring-boot-starter-test) loads a small Java agent while the tests run. Java 21 prints a warning for that
+               unless it is allowed on purpose. -->
+          <argLine>-XX:+EnableDynamicAgentLoading</argLine>
+          <!-- Keep the test output quiet: java.util.logging reads this file instead of printing every INFO line to the console. -->
+          <systemPropertyVariables>
+            <java.util.logging.config.file>${project.basedir}/src/test/resources/logging.properties</java.util.logging.config.file>
+          </systemPropertyVariables>
+        </configuration>
+      </plugin>
+      <!-- Adds "spring-boot:run" and, with the repackage goal, builds ONE runnable jar that holds the app and every library:
+           java -jar target/shop-api.jar (the Spring Boot parent pom does the second part for you; this course has its own parent). -->
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>repackage</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

@@ -11,6 +11,8 @@ new lessons, translations, instructor notes.
 - **Free tools only** for early lessons; add frameworks only when the curriculum says so.
 - **SQL in a README must be real.** From lesson 25 on, every `sql` block in a lesson README is run against H2 by `ReadmeSqlTest`
   and the `text` block under it must match the output exactly (see the comment at the top of that test for the few rules).
+- **HTTP examples must be real.** From lesson 33 on, every `curl` command and its answer in a README comes from a real run of the lesson's server, and the test counts are copied from a real `./mvnw test`.
+- **Libraries are introduced where they are taught** (Jackson in 35, Spring Boot in 36, JPA and Flyway in 38, validation in 39). Versions live only in the root `pom.xml` (the Spring Boot BOM): a lesson `pom.xml` names a library, never a version.
 - Java **21**. No preview features.
 
 ## Adding or changing a lesson

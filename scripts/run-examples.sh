@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 # Runs every single-file example under lessons/*/examples. Fails on the first error.
-# Lessons 25-32 talk to the H2 database, so the H2 jar is put on the class path for every example.
+# Lessons 25-32 and 38 talk to the H2 database, so the H2 jar is put on the class path for every example (harmless for the others).
 # The jar comes from your Maven cache (~/.m2). If it is not there yet it is downloaded once with the Maven wrapper.
-# To use another copy: H2_JAR=/path/to/h2.jar bash scripts/run-examples.sh
+# Lesson 35 also needs Jackson: a lesson whose examples folder contains the marker file .needs-solution-classpath gets the
+# class path of its solution module (the libraries it depends on) from Maven instead. The first run downloads them.
+# To use another copy of H2: H2_JAR=/path/to/h2.jar bash scripts/run-examples.sh
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
@@ -15,8 +17,18 @@ fi
 
 count=0
 for f in lessons/*/examples/*.java; do
+  dir=$(dirname "$f")
+  classpath="$H2_JAR"
+  if [ -f "$dir/.needs-solution-classpath" ]; then
+    lesson=$(dirname "$dir")
+    out="$lesson/solution/target/example-classpath.txt"
+    if [ ! -f "$out" ]; then
+      ./mvnw -B -q -pl "$lesson/solution" dependency:build-classpath -Dmdep.outputFile=target/example-classpath.txt # relative to the module
+    fi
+    classpath="$(cat "$out")"
+  fi
   echo "== $f"
-  java -cp "$H2_JAR" "$f"
+  java -cp "$classpath" "$f"
   count=$((count + 1))
 done
 echo "OK: $count examples ran"
