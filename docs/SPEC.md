@@ -53,7 +53,7 @@ Prerequisites: basic computer literacy, English reading, ability to install soft
 | A8 | Authentication and roles (admin, cashier) | Week 11 |
 | A9 | Containerised, deployed, monitored service | Week 12 (M7) |
 
-Money is stored as integer **centavos** until the files/database milestones introduce `BigDecimal`.
+Money is stored as integer **centavos** until lesson 20 (milestone M4), which replaces it with `BigDecimal` pesos and adds `java.time` timestamps.
 
 ## 4. Learning outcomes
 By week 12 a student can: (1) write, run and debug Java programs; (2) model a problem with classes and

@@ -1,0 +1,8 @@
+# Copy this file to my-checkpoint.txt (same folder) and replace every value with your own.
+# Lines starting with # are ignored. Keep the "key: value" form.
+name: YOUR NAME
+github: your-github-user-name
+branch: feature/what-you-built
+commit: feat: the first line of the commit you made
+pull-request: https://github.com/your-github-user-name/java-by-building/pull/1
+conflict-resolved: no

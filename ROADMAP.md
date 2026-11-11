@@ -8,16 +8,16 @@ Spec-first: each milestone starts with updates to [docs/SPEC.md](docs/SPEC.md).
 | **M1** Stock report | 1 | Lessons 01–04 (methods & arrays closes the week, with a review checkpoint) | ✅ lessons 01–04 |
 | **M2** Interactive console | 2 | Strings, Scanner, ArrayList/HashMap, menu (lessons 05–08) | ✅ |
 | **M3** Domain model | 3–4 | Classes, encapsulation, inheritance, interfaces, enums, records, exceptions (lessons 09–16) | ✅ |
-| **M4** File persistence | 5 | Generics, streams, files/CSV, `BigDecimal`, `java.time` | 🚧 |
-| Professional practice | 6 | JUnit/TDD, debugging, Git/GitHub, logging | 🚧 |
+| **M4** File persistence | 5 | Generics, streams, files/CSV, `BigDecimal`, `java.time` (lessons 17–20) | ✅ |
+| Professional practice | 6 | JUnit/TDD, debugging, Git/GitHub, logging (lessons 21–24) | ✅ |
 | **M5** Database-backed | 7–8 | SQL, JDBC, repository pattern, transactions, migrations | 🚧 |
 | **M6** REST API | 9–10 | HTTP, REST, JSON, Spring Boot, Spring Data JPA, MockMvc | 🚧 |
 | Security & quality | 11 | Auth, roles, CI, OpenAPI | 🚧 |
 | **M7** Deployed | 12 | Docker, deployment, monitoring, capstone, portfolio | 🚧 |
 
 ## Next up
-1. Tag `milestone-1` (end of lesson 03 / Week 1), `milestone-2` (lesson 08) and `milestone-3` (lesson 16).
-2. Week 5 (collections, streams, files): lessons 17–20 (generics, streams, files and CSV, `BigDecimal` and `java.time`), starting from the lesson 16 domain model; milestone M4 makes the app save to files.
+1. Tag `milestone-1` (end of lesson 03 / Week 1), `milestone-2` (lesson 08), `milestone-3` (lesson 16) and `milestone-4` (lesson 20).
+2. Week 7 (databases I): lessons 25–28 (relational thinking and ERD, SQL basics, joins and reports, schema design for the shop), starting from the lesson 24 app and its CSV files.
 3. Generate `lessons/index.json` from lesson front matter in CI (website integration).
 4. Add a Windows `scripts/run-examples.ps1`.
 5. Instructor guide (pacing, grading rubric, lab-room setup).

@@ -1,0 +1,10 @@
+Shop menu notes
+1. Add product
+2. Receive stock
+3. Record sale
+<<<<<<< HEAD
+4. Show stock report
+=======
+4. Stock and reorder report
+>>>>>>> feature/reorder-report
+5. Quit

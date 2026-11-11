@@ -36,7 +36,15 @@ program into a tested, database-backed, deployed REST API you can show to employ
 | 14 | [Interfaces and polymorphism](lessons/14-interfaces-and-polymorphism/README.md) | ✅ |
 | 15 | [Enums and records](lessons/15-enums-and-records/README.md) | ✅ |
 | 16 | [Exceptions](lessons/16-exceptions/README.md) — **Milestone M3** | ✅ |
-| 17–48 | See the [curriculum](docs/CURRICULUM.md) and [roadmap](ROADMAP.md) | 🚧 |
+| 17 | [Generics and collections](lessons/17-generics-and-collections/README.md) | ✅ |
+| 18 | [Streams](lessons/18-streams/README.md) | ✅ |
+| 19 | [Files and CSV](lessons/19-files-and-csv/README.md) | ✅ |
+| 20 | [BigDecimal and java.time](lessons/20-bigdecimal-and-time/README.md) — **Milestone M4** | ✅ |
+| 21 | [JUnit and TDD](lessons/21-junit-and-tdd/README.md) | ✅ |
+| 22 | [Debugging](lessons/22-debugging/README.md) | ✅ |
+| 23 | [Git and GitHub flow](lessons/23-git-and-github/README.md) | ✅ |
+| 24 | [Logging and clean code](lessons/24-logging-and-clean-code/README.md) — Week 6 complete | ✅ |
+| 25–48 | See the [curriculum](docs/CURRICULUM.md) and [roadmap](ROADMAP.md) | 🚧 |
 
 ## How each lesson folder works
 ```

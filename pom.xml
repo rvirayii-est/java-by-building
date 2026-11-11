@@ -33,6 +33,14 @@
     <module>lessons/14-interfaces-and-polymorphism/solution</module>
     <module>lessons/15-enums-and-records/solution</module>
     <module>lessons/16-exceptions/solution</module>
+    <module>lessons/17-generics-and-collections/solution</module>
+    <module>lessons/18-streams/solution</module>
+    <module>lessons/19-files-and-csv/solution</module>
+    <module>lessons/20-bigdecimal-and-time/solution</module>
+    <module>lessons/21-junit-and-tdd/solution</module>
+    <module>lessons/22-debugging/solution</module>
+    <module>lessons/23-git-and-github/solution</module>
+    <module>lessons/24-logging-and-clean-code/solution</module>
   </modules>
 
   <profiles>
@@ -73,6 +81,22 @@
         <module>lessons/15-enums-and-records/exercises</module>
         <module>lessons/16-exceptions/starter</module>
         <module>lessons/16-exceptions/exercises</module>
+        <module>lessons/17-generics-and-collections/starter</module>
+        <module>lessons/17-generics-and-collections/exercises</module>
+        <module>lessons/18-streams/starter</module>
+        <module>lessons/18-streams/exercises</module>
+        <module>lessons/19-files-and-csv/starter</module>
+        <module>lessons/19-files-and-csv/exercises</module>
+        <module>lessons/20-bigdecimal-and-time/starter</module>
+        <module>lessons/20-bigdecimal-and-time/exercises</module>
+        <module>lessons/21-junit-and-tdd/starter</module>
+        <module>lessons/21-junit-and-tdd/exercises</module>
+        <module>lessons/22-debugging/starter</module>
+        <module>lessons/22-debugging/exercises</module>
+        <module>lessons/23-git-and-github/starter</module>
+        <module>lessons/23-git-and-github/exercises</module>
+        <module>lessons/24-logging-and-clean-code/starter</module>
+        <module>lessons/24-logging-and-clean-code/exercises</module>
       </modules>
     </profile>
   </profiles>
