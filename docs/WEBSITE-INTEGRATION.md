@@ -8,7 +8,7 @@ The course is built so a separate website can link to or embed lessons **without
 - **Stable slugs** (`01-hello-java`): never renamed once published; use them as URL paths.
 - **Relative links only** inside lessons, so rendering from a copy or a submodule still works.
 - **No site-specific syntax**: plain GitHub-flavoured Markdown, fenced code blocks with language tags.
-- **Raw URLs** work: `https://raw.githubusercontent.com/OWNER/java-by-building/main/lessons/<slug>/README.md`.
+- **Raw URLs** work: `https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/<slug>/README.md`.
 
 ## Options (pick later)
 1. **Link out** to the GitHub folder — zero effort, always current.
@@ -19,4 +19,4 @@ The course is built so a separate website can link to or embed lessons **without
 ## Suggested follow-ups (not done yet)
 - Generate `lessons/index.json` from front matter in CI so the site never hand-maintains a list.
 - Add a `LICENSE` note on the site stating the course is MIT-licensed with attribution.
-- Rewrite the `OWNER` placeholder in `docs/SETUP.md` clone URLs if lessons are mirrored.
+- Update clone URLs in `docs/SETUP.md` if the repo moves.

@@ -11,7 +11,7 @@ No Maven install needed: use the wrapper in this repo — `./mvnw` (macOS/Linux/
 
 ## Get the course
 ```
-git clone https://github.com/OWNER/java-by-building.git
+git clone https://github.com/rvirayii-est/java-by-building.git
 cd java-by-building
 ```
 
