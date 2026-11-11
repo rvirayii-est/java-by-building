@@ -1,0 +1,95 @@
+package dev.javabybuilding.inventory;
+
+import java.io.PrintStream;
+import java.util.NoSuchElementException;
+import java.util.Scanner;
+
+/** The interactive menu. Everything reads from the Scanner and writes to the PrintStream it is given. */
+public class Menu {
+
+    /** The five choices, one per line. */
+    public static String menuText() {
+        return "--- Menu ---\n"
+                + "1. Add product\n"
+                + "2. Receive stock\n"
+                + "3. Record sale\n"
+                + "4. Stock report\n"
+                + "5. Quit";
+    }
+
+    /** Shows the menu again and again until the person chooses Quit (or the input runs out). */
+    public static void run(Scanner in, PrintStream out, Inventory inventory) {
+        try {
+            while (true) {
+                out.println();
+                out.println(menuText());
+                int choice = InputReader.readInt(in, out, "Choose 1-5: ", 1, 5);
+                if (choice == 1) {
+                    addProduct(in, out, inventory);
+                } else if (choice == 2) {
+                    receiveStock(in, out, inventory);
+                } else if (choice == 3) {
+                    recordSale(in, out, inventory);
+                } else if (choice == 4) {
+                    showReport(out, inventory);
+                } else {
+                    out.println("Goodbye.");
+                    return;
+                }
+            }
+        } catch (NoSuchElementException e) {
+            // Scanner has no more input (for example the person pressed Ctrl+D). Stop politely.
+            out.println();
+            out.println("Input ended. Goodbye.");
+        }
+    }
+
+    static void addProduct(Scanner in, PrintStream out, Inventory inventory) {
+        String name = InputReader.readText(in, out, "Product name: ");
+        String existing = inventory.find(name); // asked early so we do not make the person type a price for nothing
+        if (existing != null) {
+            out.println("That product already exists: " + existing);
+            return;
+        }
+        int price = InputReader.readMoney(in, out, "Unit price in PHP: ", Product.MAX_PRICE);
+        int reorderLevel = InputReader.readInt(in, out, "Reorder level (0-1000): ", 0, 1000);
+        try {
+            inventory.addProduct(name, price, reorderLevel);
+            out.println("Added " + name + " at " + PriceCalculator.format(price) + ".");
+        } catch (ShopException e) {
+            out.println(e.getMessage());
+        }
+    }
+
+    /**
+     * TODO 4a: wrap the body in try { ... } catch (ShopException e) { out.println(e.getMessage()); }
+     * so that "Unknown product: salt" is printed instead of the program crashing.
+     */
+    static void receiveStock(Scanner in, PrintStream out, Inventory inventory) {
+        String name = InputReader.readText(in, out, "Product name: ");
+        Product product = inventory.getProduct(name); // throws UnknownProductException, so we never ask for a quantity
+        int amount = InputReader.readInt(in, out, "Quantity received (1-10000): ", 1, 10000);
+        inventory.receive(product.getName(), amount);
+        out.println("Received " + amount + " x " + product.getName() + ". In stock now: " + product.getQuantity());
+    }
+
+    /**
+     * TODO 4b: wrap the body in try { ... } catch (ShopException e) { out.println(e.getMessage()); }
+     * so that "Not enough stock: only 12 of Rice 25kg left." is printed (the message is built inside the exception).
+     */
+    static void recordSale(Scanner in, PrintStream out, Inventory inventory) {
+        String name = InputReader.readText(in, out, "Product name: ");
+        Product product = inventory.getProduct(name);
+        int amount = InputReader.readInt(in, out, "Quantity sold (1-100): ", 1, 100);
+        int total = inventory.sell(product.getName(), amount); // may throw InsufficientStockException
+        out.println("Sold " + amount + " x " + product.getName() + " = " + PriceCalculator.format(total));
+        out.println("VAT included: " + PriceCalculator.format(PriceCalculator.vatIncluded(total)));
+    }
+
+    static void showReport(PrintStream out, Inventory inventory) {
+        out.println(inventory.report());
+        out.println();
+        out.println("Total stock value: " + PriceCalculator.format(inventory.totalValue()));
+        out.println("Sales so far: " + PriceCalculator.format(inventory.salesTotal()));
+    }
+}

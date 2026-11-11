@@ -28,7 +28,15 @@ program into a tested, database-backed, deployed REST API you can show to employ
 | 06 | [Scanner and input validation](lessons/06-scanner-and-input/README.md) | ✅ |
 | 07 | [ArrayList and HashMap](lessons/07-arraylist-and-hashmap/README.md) | ✅ |
 | 08 | [Console menu](lessons/08-console-menu/README.md) — **Milestone M2** | ✅ |
-| 09–48 | See the [curriculum](docs/CURRICULUM.md) and [roadmap](ROADMAP.md) | 🚧 |
+| 09 | [Classes and objects](lessons/09-classes-and-objects/README.md) | ✅ |
+| 10 | [Encapsulation](lessons/10-encapsulation/README.md) | ✅ |
+| 11 | [Product and Customer classes](lessons/11-product-and-customer/README.md) | ✅ |
+| 12 | [Static vs instance](lessons/12-static-vs-instance/README.md) — Week 3 checkpoint | ✅ |
+| 13 | [Inheritance](lessons/13-inheritance/README.md) | ✅ |
+| 14 | [Interfaces and polymorphism](lessons/14-interfaces-and-polymorphism/README.md) | ✅ |
+| 15 | [Enums and records](lessons/15-enums-and-records/README.md) | ✅ |
+| 16 | [Exceptions](lessons/16-exceptions/README.md) — **Milestone M3** | ✅ |
+| 17–48 | See the [curriculum](docs/CURRICULUM.md) and [roadmap](ROADMAP.md) | 🚧 |
 
 ## How each lesson folder works
 ```

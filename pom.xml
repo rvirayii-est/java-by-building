@@ -25,6 +25,14 @@
     <module>lessons/06-scanner-and-input/solution</module>
     <module>lessons/07-arraylist-and-hashmap/solution</module>
     <module>lessons/08-console-menu/solution</module>
+    <module>lessons/09-classes-and-objects/solution</module>
+    <module>lessons/10-encapsulation/solution</module>
+    <module>lessons/11-product-and-customer/solution</module>
+    <module>lessons/12-static-vs-instance/solution</module>
+    <module>lessons/13-inheritance/solution</module>
+    <module>lessons/14-interfaces-and-polymorphism/solution</module>
+    <module>lessons/15-enums-and-records/solution</module>
+    <module>lessons/16-exceptions/solution</module>
   </modules>
 
   <profiles>
@@ -49,6 +57,22 @@
         <module>lessons/07-arraylist-and-hashmap/exercises</module>
         <module>lessons/08-console-menu/starter</module>
         <module>lessons/08-console-menu/exercises</module>
+        <module>lessons/09-classes-and-objects/starter</module>
+        <module>lessons/09-classes-and-objects/exercises</module>
+        <module>lessons/10-encapsulation/starter</module>
+        <module>lessons/10-encapsulation/exercises</module>
+        <module>lessons/11-product-and-customer/starter</module>
+        <module>lessons/11-product-and-customer/exercises</module>
+        <module>lessons/12-static-vs-instance/starter</module>
+        <module>lessons/12-static-vs-instance/exercises</module>
+        <module>lessons/13-inheritance/starter</module>
+        <module>lessons/13-inheritance/exercises</module>
+        <module>lessons/14-interfaces-and-polymorphism/starter</module>
+        <module>lessons/14-interfaces-and-polymorphism/exercises</module>
+        <module>lessons/15-enums-and-records/starter</module>
+        <module>lessons/15-enums-and-records/exercises</module>
+        <module>lessons/16-exceptions/starter</module>
+        <module>lessons/16-exceptions/exercises</module>
       </modules>
     </profile>
   </profiles>
