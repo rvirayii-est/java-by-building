@@ -1,0 +1,7 @@
+# SAMPLE checkpoint for the reference solution. Yours must have your own name, your own GitHub user name and your own pull request.
+name: Sample Student
+github: sample-student
+branch: feature/add-reorder-report
+commit: feat: show reorder suggestions in the report
+pull-request: https://github.com/sample-student/java-by-building/pull/1
+conflict-resolved: yes

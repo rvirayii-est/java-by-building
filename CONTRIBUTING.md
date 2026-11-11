@@ -9,6 +9,8 @@ new lessons, translations, instructor notes.
 - **Plain English.** Short sentences. Define new terms. Assume no prior knowledge.
 - **Everything runs.** Every code example must compile and run. CI checks it.
 - **Free tools only** for early lessons; add frameworks only when the curriculum says so.
+- **SQL in a README must be real.** From lesson 25 on, every `sql` block in a lesson README is run against H2 by `ReadmeSqlTest`
+  and the `text` block under it must match the output exactly (see the comment at the top of that test for the few rules).
 - Java **21**. No preview features.
 
 ## Adding or changing a lesson

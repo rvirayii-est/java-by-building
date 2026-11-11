@@ -8,7 +8,7 @@ program into a tested, database-backed, deployed REST API you can show to employ
 
 - 🧱 **One app, evolving every week** — each milestone is preserved so you can follow its history.
 - 🧪 **Tests tell you when you are done** — every lesson has verifiable completion criteria.
-- 🆓 **Free tools only** — JDK 21, Git, any editor. No Maven install (wrapper included).
+- 🆓 **Free tools only** — JDK 21, Git, any editor. No Maven install (wrapper included). The database (H2) is one free `.jar`, downloaded by Maven: nothing to install.
 - 🎓 Built for beginners and TESDA trainees; useful to instructors ([curriculum](docs/CURRICULUM.md),
   [TESDA mapping](docs/TESDA-MAPPING.md)).
 
@@ -44,7 +44,15 @@ program into a tested, database-backed, deployed REST API you can show to employ
 | 22 | [Debugging](lessons/22-debugging/README.md) | ✅ |
 | 23 | [Git and GitHub flow](lessons/23-git-and-github/README.md) | ✅ |
 | 24 | [Logging and clean code](lessons/24-logging-and-clean-code/README.md) — Week 6 complete | ✅ |
-| 25–48 | See the [curriculum](docs/CURRICULUM.md) and [roadmap](ROADMAP.md) | 🚧 |
+| 25 | [Relational thinking and ERD](lessons/25-relational-thinking/README.md) | ✅ |
+| 26 | [SQL basics](lessons/26-sql-basics/README.md) | ✅ |
+| 27 | [Joins and reports](lessons/27-joins-and-reports/README.md) | ✅ |
+| 28 | [Schema design for the shop](lessons/28-schema-design/README.md) — Week 7 complete | ✅ |
+| 29 | [JDBC](lessons/29-jdbc/README.md) | ✅ |
+| 30 | [The repository pattern](lessons/30-repository-pattern/README.md) | ✅ |
+| 31 | [Transactions](lessons/31-transactions/README.md) | ✅ |
+| 32 | [Migrations](lessons/32-migrations/README.md) — **Milestone M5** | ✅ |
+| 33–48 | See the [curriculum](docs/CURRICULUM.md) and [roadmap](ROADMAP.md) | 🚧 |
 
 ## How each lesson folder works
 ```
@@ -63,7 +71,7 @@ development): [docs/SPEC.md](docs/SPEC.md). Reference solutions are in each less
 ```
 ./mvnw -B verify                # reference solutions + tests
 ./mvnw -B -Pstudent test-compile # starters and exercises still compile
-bash scripts/run-examples.sh     # every example runs
+bash scripts/run-examples.sh     # every example runs (finds or downloads the H2 jar for lessons 25-32)
 ```
 
 ## Contributing & license

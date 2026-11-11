@@ -13,6 +13,8 @@
     <maven.compiler.release>21</maven.compiler.release>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.version>5.11.4</junit.version>
+    <!-- H2: a free database written in Java. One jar, no install. Used from lesson 25 (examples find this version too: see scripts/run-examples.sh). -->
+    <h2.version>2.4.240</h2.version>
   </properties>
 
   <!-- Default build = the reference solutions (these must always pass). -->
@@ -41,6 +43,14 @@
     <module>lessons/22-debugging/solution</module>
     <module>lessons/23-git-and-github/solution</module>
     <module>lessons/24-logging-and-clean-code/solution</module>
+    <module>lessons/25-relational-thinking/solution</module>
+    <module>lessons/26-sql-basics/solution</module>
+    <module>lessons/27-joins-and-reports/solution</module>
+    <module>lessons/28-schema-design/solution</module>
+    <module>lessons/29-jdbc/solution</module>
+    <module>lessons/30-repository-pattern/solution</module>
+    <module>lessons/31-transactions/solution</module>
+    <module>lessons/32-migrations/solution</module>
   </modules>
 
   <profiles>
@@ -97,9 +107,35 @@
         <module>lessons/23-git-and-github/exercises</module>
         <module>lessons/24-logging-and-clean-code/starter</module>
         <module>lessons/24-logging-and-clean-code/exercises</module>
+        <module>lessons/25-relational-thinking/starter</module>
+        <module>lessons/25-relational-thinking/exercises</module>
+        <module>lessons/26-sql-basics/starter</module>
+        <module>lessons/26-sql-basics/exercises</module>
+        <module>lessons/27-joins-and-reports/starter</module>
+        <module>lessons/27-joins-and-reports/exercises</module>
+        <module>lessons/28-schema-design/starter</module>
+        <module>lessons/28-schema-design/exercises</module>
+        <module>lessons/29-jdbc/starter</module>
+        <module>lessons/29-jdbc/exercises</module>
+        <module>lessons/30-repository-pattern/starter</module>
+        <module>lessons/30-repository-pattern/exercises</module>
+        <module>lessons/31-transactions/starter</module>
+        <module>lessons/31-transactions/exercises</module>
+        <module>lessons/32-migrations/starter</module>
+        <module>lessons/32-migrations/exercises</module>
       </modules>
     </profile>
   </profiles>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.h2database</groupId>
+        <artifactId>h2</artifactId>
+        <version>${h2.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
   <dependencies>
     <dependency>

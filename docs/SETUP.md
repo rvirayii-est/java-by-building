@@ -20,6 +20,15 @@ cd java-by-building
 java lessons/01-hello-java/examples/HelloJava.java
 ```
 
+## Run a database example (lessons 25-32)
+These examples talk to the free H2 database, which is one `.jar` file. Maven downloads it into your `~/.m2` folder the first time
+you build (or fetch only the jar with `./mvnw -q dependency:get -Dartifact=com.h2database:h2:2.4.240`). Then:
+```
+java -cp ~/.m2/repository/com/h2database/h2/2.4.240/h2-2.4.240.jar lessons/26-sql-basics/examples/SqlTour.java
+```
+In PowerShell the jar is `$env:USERPROFILE\.m2\repository\com\h2database\h2\2.4.240\h2-2.4.240.jar`. To run every example of the course at once, use
+`bash scripts/run-examples.sh`: it finds or downloads the jar for you. No database server is installed.
+
 ## Work on a lesson
 Open `lessons/NN-slug/starter` in your editor, follow the lesson `README.md`, then run:
 ```
