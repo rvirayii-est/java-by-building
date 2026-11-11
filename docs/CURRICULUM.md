@@ -5,8 +5,8 @@ Milestones (M1–M7) are runnable snapshots of the Inventory & Sales System.
 
 | Wk | Theme | Lessons | App milestone |
 |----|-------|---------|---------------|
-| 1 | Java foundations | 01 Hello, Java ✅ · 02 Variables & money ✅ · 03 Decisions & loops ✅ · 04 Methods & arrays 🚧 | **M1** Stock report + price calculator ✅ (end of lesson 03) |
-| 2 | Strings, input, collections | 05 Strings & text · 06 Scanner & input validation · 07 ArrayList & HashMap · 08 Console menu | **M2** Interactive console app |
+| 1 | Java foundations | 01 Hello, Java ✅ · 02 Variables & money ✅ · 03 Decisions & loops ✅ · 04 Methods & arrays ✅ | **M1** Stock report + price calculator ✅ (end of lesson 03); Week 1 review in lesson 04 |
+| 2 | Strings, input, collections | 05 Strings & text ✅ · 06 Scanner & input validation ✅ · 07 ArrayList & HashMap ✅ · 08 Console menu ✅ | **M2** Interactive console app ✅ (end of lesson 08) |
 | 3 | OOP I | 09 Classes & objects · 10 Encapsulation · 11 Product & Customer classes · 12 Static vs instance | |
 | 4 | OOP II | 13 Inheritance · 14 Interfaces & polymorphism · 15 Enums & records · 16 Exceptions | **M3** Domain model (Product, Sale, SaleLine, StockMovement) |
 | 5 | Collections, streams, files | 17 Generics & collections · 18 Streams · 19 Files & CSV · 20 `BigDecimal` & `java.time` | **M4** App saves to files |
@@ -31,4 +31,4 @@ Each lesson ≈ 5 hours (guided + lab); 48 lessons ≈ 240 h. Weeks 1, 6 and 12 
 | 12 | Capstone demo: deployed app + README + 5-minute walkthrough |
 
 ## Current implementation status
-Lessons 01–03 and milestone M1 are complete and CI-verified. Everything else is planned in [ROADMAP.md](../ROADMAP.md).
+Lessons 01–08 and milestones M1 and M2 are complete and CI-verified. Everything else is planned in [ROADMAP.md](../ROADMAP.md).

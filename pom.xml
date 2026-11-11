@@ -20,6 +20,11 @@
     <module>lessons/01-hello-java/solution</module>
     <module>lessons/02-variables-and-money/solution</module>
     <module>lessons/03-decisions-and-loops/solution</module>
+    <module>lessons/04-methods-and-arrays/solution</module>
+    <module>lessons/05-strings-and-text/solution</module>
+    <module>lessons/06-scanner-and-input/solution</module>
+    <module>lessons/07-arraylist-and-hashmap/solution</module>
+    <module>lessons/08-console-menu/solution</module>
   </modules>
 
   <profiles>
@@ -34,6 +39,16 @@
         <module>lessons/02-variables-and-money/exercises</module>
         <module>lessons/03-decisions-and-loops/starter</module>
         <module>lessons/03-decisions-and-loops/exercises</module>
+        <module>lessons/04-methods-and-arrays/starter</module>
+        <module>lessons/04-methods-and-arrays/exercises</module>
+        <module>lessons/05-strings-and-text/starter</module>
+        <module>lessons/05-strings-and-text/exercises</module>
+        <module>lessons/06-scanner-and-input/starter</module>
+        <module>lessons/06-scanner-and-input/exercises</module>
+        <module>lessons/07-arraylist-and-hashmap/starter</module>
+        <module>lessons/07-arraylist-and-hashmap/exercises</module>
+        <module>lessons/08-console-menu/starter</module>
+        <module>lessons/08-console-menu/exercises</module>
       </modules>
     </profile>
   </profiles>

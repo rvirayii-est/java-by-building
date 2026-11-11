@@ -23,7 +23,12 @@ program into a tested, database-backed, deployed REST API you can show to employ
 | 01 | [Hello, Java](lessons/01-hello-java/README.md) | ✅ |
 | 02 | [Variables, types and money](lessons/02-variables-and-money/README.md) | ✅ |
 | 03 | [Decisions and loops](lessons/03-decisions-and-loops/README.md) — **Milestone M1** | ✅ |
-| 04–48 | See the [curriculum](docs/CURRICULUM.md) and [roadmap](ROADMAP.md) | 🚧 |
+| 04 | [Methods and arrays](lessons/04-methods-and-arrays/README.md) — Week 1 review | ✅ |
+| 05 | [Strings and text](lessons/05-strings-and-text/README.md) | ✅ |
+| 06 | [Scanner and input validation](lessons/06-scanner-and-input/README.md) | ✅ |
+| 07 | [ArrayList and HashMap](lessons/07-arraylist-and-hashmap/README.md) | ✅ |
+| 08 | [Console menu](lessons/08-console-menu/README.md) — **Milestone M2** | ✅ |
+| 09–48 | See the [curriculum](docs/CURRICULUM.md) and [roadmap](ROADMAP.md) | 🚧 |
 
 ## How each lesson folder works
 ```
