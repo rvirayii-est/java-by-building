@@ -1,0 +1,31 @@
+# YOUR pipeline. Copy this file to  .github/workflows/ci.yml  in your own repository when it is finished.
+# CiWorkflowTest reads this file: run  ../../../mvnw test -Dtest=CiWorkflowTest  and fix what it says, one failure at a time.
+name: CI
+
+# TODO 1: run on every push to main AND on every pull request:
+#   on:
+#     push:
+#       branches: [main]
+#     pull_request:
+on:
+  push:
+    branches: [main]
+
+# TODO 2: give the build read-only access:   permissions:  contents: read
+# (A "permissions:" block at the top level, before "jobs:".)
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # TODO 3: add  timeout-minutes: 20  under "runs-on" so a stuck build cannot run for hours.
+    steps:
+      # TODO 4: the FIRST step must get your code:   - uses: actions/checkout@v4
+      # TODO 5: install Java 21 with a Maven cache (the second step):
+      #   - uses: actions/setup-java@v4
+      #     with:
+      #       distribution: temurin
+      #       java-version: "21"
+      #       cache: maven
+      - name: Build and run all the tests
+        # TODO 6: use the Maven wrapper in batch mode:  ./mvnw -B verify
+        run: mvn verify

@@ -1,0 +1,39 @@
+# A starting pipeline for YOUR OWN fork or project. Copy this file to  .github/workflows/ci.yml  in your repository, commit, push:
+# GitHub then runs it on every push to main and on every pull request, and shows a green tick or a red cross.
+# (This copy lives in lessons/43-ci-pipeline/solution/ci/ so that a test can check it; GitHub only runs files in .github/workflows/.)
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# The build only needs to READ your code. Giving it nothing more limits the damage if a workflow is ever abused.
+permissions:
+  contents: read
+
+# A new push to the same branch cancels the run that is still going.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest      # a fresh, empty Linux machine for every run: "works on my PC" is not enough
+    timeout-minutes: 20         # a stuck build must not run for hours
+    steps:
+      - uses: actions/checkout@v4          # step 1: get your code onto the machine
+      - uses: actions/setup-java@v4        # step 2: install Java ...
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: maven                     # ... and keep ~/.m2 between runs, keyed on your pom.xml files (the big speed-up)
+      - name: Build and run all the tests
+        run: ./mvnw -B verify              # -B = batch mode: no colours or progress bars in a log
+      - name: Keep the test reports when something failed
+        if: failure()                      # only runs when an earlier step failed
+        uses: actions/upload-artifact@v4
+        with:
+          name: surefire-reports
+          path: "**/target/surefire-reports"
+          retention-days: 7

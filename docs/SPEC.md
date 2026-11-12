@@ -1,6 +1,6 @@
 # Course Specification — Java by Building
 
-Status: **v0.1 (draft, living document).** Spec comes first: lessons are written against this file.
+Status: **v1.0 for the 48-lesson course: all lessons and milestones M1-M7 are implemented and CI-verified.** This is a living document: spec comes first, lessons are written against this file.
 Change the spec in a PR *before* changing lessons that depend on it.
 
 ## 1. Purpose
@@ -38,12 +38,14 @@ Prerequisites: basic computer literacy, English reading, ability to install soft
   From lesson 25 the **H2** database (a single free `.jar`, in memory for tests and in a file for the app) is the only
   extra dependency until Week 9. Maven downloads it; there is no database server to install, and PostgreSQL/MySQL are explained, never required.
   From lesson 35 the libraries are added one lesson at a time through Maven, never installed: Jackson (JSON, lesson 35), Spring Boot's web starter
-  and test starter (lesson 36), Spring Data JPA and Flyway (lesson 38), Bean Validation (lesson 39). Their versions are fixed in one place, the
+  and test starter (lesson 36), Spring Data JPA and Flyway (lesson 38), Bean Validation (lesson 39), Spring Security and its test helpers (lesson 41),
+  springdoc OpenAPI (lesson 44, the only library outside the Spring Boot BOM: its version is a property of the root `pom.xml`) and Spring Boot Actuator (lesson 47).
+  Docker and Docker Compose (lessons 45-46) are optional: no lesson or CI step requires them. Their versions are fixed in one place, the
   Spring Boot BOM imported by the root `pom.xml` (Spring Boot **3.5.x**, Java 21), so a lesson `pom.xml` names a library and never its version.
 - **N3** Every published code example compiles and runs. CI enforces it (§8).
 - **N4** Frameworks arrive late and only when the pain they solve has been felt (no Spring before week 9). Lessons 33-35 build the whole API with the JDK's
   `HttpServer`/`HttpClient` (plus Jackson in 35); Spring Boot enters in lesson 36 to take that plumbing away.
-- **N5** No paid services, accounts or cloud credit required before week 12 (the deployment lesson offers free options).
+- **N5** No paid services, accounts or cloud credit required anywhere. A free GitHub account is used from lesson 23 (and for CI in lesson 43); the deployment lesson explains hosting options and their limits but never requires one.
   No database server, account or installer is needed in weeks 7-8: H2 runs inside the Java program.
 - **N6** Beginner-friendly: short sentences, define every new term on first use, show expected output.
 
@@ -57,8 +59,8 @@ Prerequisites: basic computer literacy, English reading, ability to install soft
 | A5 | Save/load data to files | Week 5 (M4) |
 | A6 | Relational database persistence (H2, JDBC, repositories) with transactions and versioned migrations | Weeks 7–8 (M5) |
 | A7 | REST API (products, sales, reports) on Spring Boot, JPA and H2, validated and tested | Weeks 9–10 (M6) |
-| A8 | Authentication and roles (admin, cashier) | Week 11 |
-| A9 | Containerised, deployed, monitored service | Week 12 (M7) |
+| A8 | Authentication (BCrypt-hashed passwords, HTTP Basic) and roles (admin, cashier) with Spring Security | Week 11 |
+| A9 | Documented (OpenAPI), containerised, configurable from the environment, monitored (Actuator, request ids, structured logs) service; ready to deploy | Week 12 (M7) |
 
 Money is stored as integer **centavos** until lesson 20 (milestone M4), which replaces it with `BigDecimal` pesos and adds `java.time` timestamps.
 
@@ -108,7 +110,9 @@ Each `starter|exercises|solution` is a Maven module. **Milestones** are preserve
 
 ## 8. CI
 GitHub Actions (`.github/workflows/ci.yml`): JDK 21, `./mvnw verify` (solutions + tests),
-`./mvnw -Pstudent test-compile` (starters/exercises compile), `scripts/run-examples.sh` (every example runs; it puts the H2 jar on the class path, and the Jackson jars for lesson 35).
+`./mvnw -Pstudent test-compile` (starters/exercises compile), `scripts/run-examples.sh` (every example runs; it puts the H2 jar on the class path, and the Jackson jars for lesson 35;
+`scripts/run-examples.ps1` is the PowerShell twin). Before the build, two cheap checks: `java scripts/LessonTool.java check` (every lesson README has its front matter and eight numbered sections) and
+`java scripts/LessonTool.java index --check` (the committed `lessons/index.json` is up to date; contract in [WEBSITE-INTEGRATION.md](WEBSITE-INTEGRATION.md)).
 
 ## 9. Out of scope (for now)
 Front-end frameworks, microservices, cloud-vendor specifics, Kotlin/Android. A minimal HTML client may be

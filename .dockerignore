@@ -1,0 +1,18 @@
+# Files that must NOT be sent to Docker as the build "context". Smaller context = faster build, and nothing private ends up in an image.
+# (The Dockerfiles of lessons 45-48 use the repository root as their context.)
+.git
+.github
+.idea
+.vscode
+*.iml
+**/target
+**/shop-data
+**/*.mv.db
+**/*.trace.db
+**/*.lock.db
+**/.env
+**/.env.*
+!**/.env.example
+**/*.log
+docs
+templates

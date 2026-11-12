@@ -1,0 +1,958 @@
+{
+  "schema": 1,
+  "repository": "rvirayii-est/java-by-building",
+  "branch": "main",
+  "count": 48,
+  "lessons": [
+    {
+      "number": 1,
+      "slug": "01-hello-java",
+      "title": "01 — Hello, Java",
+      "week": 1,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "M1 — Stock report (part 1 of 3)",
+      "objectives": [
+        "Install a JDK and check it with `java -version`",
+        "Run a single-file Java program from the terminal",
+        "Explain what `public static void main` is for",
+        "Print text and return text from a method"
+      ],
+      "path": "lessons/01-hello-java",
+      "readme": "lessons/01-hello-java/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/01-hello-java/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/01-hello-java"
+    },
+    {
+      "number": 2,
+      "slug": "02-variables-and-money",
+      "title": "02 — Variables, types and money",
+      "week": 1,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "M1 — Stock report (part 2 of 3)",
+      "objectives": [
+        "Declare variables with the right type (int, String)",
+        "Do arithmetic and explain integer division",
+        "Explain why money is stored as whole centavos",
+        "Write methods with parameters and return values"
+      ],
+      "path": "lessons/02-variables-and-money",
+      "readme": "lessons/02-variables-and-money/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/02-variables-and-money/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/02-variables-and-money"
+    },
+    {
+      "number": 3,
+      "slug": "03-decisions-and-loops",
+      "title": "03 — Decisions and loops",
+      "week": 1,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "M1 — Stock report (complete)",
+      "objectives": [
+        "Choose between paths with if / else if / else",
+        "Repeat work with a for loop over an array",
+        "Build a formatted multi-line report as a String",
+        "Run the first complete milestone of the application"
+      ],
+      "path": "lessons/03-decisions-and-loops",
+      "readme": "lessons/03-decisions-and-loops/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/03-decisions-and-loops/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/03-decisions-and-loops"
+    },
+    {
+      "number": 4,
+      "slug": "04-methods-and-arrays",
+      "title": "04 — Methods and arrays",
+      "week": 1,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "M1 — Stock report (kept; Week 1 review)",
+      "objectives": [
+        "Write methods with parameters and return values, and call them",
+        "Explain why a method that changes an array changes the caller's array",
+        "Search an array for a value and return its position",
+        "Split a program into small methods instead of one long main",
+        "Show that you can do everything from Week 1 (review checkpoint)"
+      ],
+      "path": "lessons/04-methods-and-arrays",
+      "readme": "lessons/04-methods-and-arrays/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/04-methods-and-arrays/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/04-methods-and-arrays"
+    },
+    {
+      "number": 5,
+      "slug": "05-strings-and-text",
+      "title": "05 — Strings and text",
+      "week": 2,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "M2 — Interactive console app (part 1 of 4)",
+      "objectives": [
+        "Use String methods (trim, toUpperCase, substring, indexOf, contains, split, equalsIgnoreCase)",
+        "Clean up messy typed text before using it",
+        "Explain why Strings never change and why we compare them with equals",
+        "Build text with StringBuilder and String.format"
+      ],
+      "path": "lessons/05-strings-and-text",
+      "readme": "lessons/05-strings-and-text/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/05-strings-and-text/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/05-strings-and-text"
+    },
+    {
+      "number": 6,
+      "slug": "06-scanner-and-input",
+      "title": "06 — Scanner and input validation",
+      "week": 2,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "M2 — Interactive console app (part 2 of 4)",
+      "objectives": [
+        "Read typed text with Scanner",
+        "Validate input and ask again until it is valid",
+        "Convert typed pesos into integer centavos",
+        "Write input code that tests can run without a keyboard"
+      ],
+      "path": "lessons/06-scanner-and-input",
+      "readme": "lessons/06-scanner-and-input/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/06-scanner-and-input/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/06-scanner-and-input"
+    },
+    {
+      "number": 7,
+      "slug": "07-arraylist-and-hashmap",
+      "title": "07 — ArrayList and HashMap",
+      "week": 2,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "M2 — Interactive console app (part 3 of 4)",
+      "objectives": [
+        "Store a growing list of items in an ArrayList",
+        "Look values up by key in a HashMap",
+        "Replace parallel arrays with an Inventory that keeps products by name",
+        "Explain what null means and why a lookup can return it"
+      ],
+      "path": "lessons/07-arraylist-and-hashmap",
+      "readme": "lessons/07-arraylist-and-hashmap/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/07-arraylist-and-hashmap/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/07-arraylist-and-hashmap"
+    },
+    {
+      "number": 8,
+      "slug": "08-console-menu",
+      "title": "08 — Console menu",
+      "week": 2,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "M2 — Interactive console app (complete)",
+      "objectives": [
+        "Build a menu loop that repeats until the user quits",
+        "Connect menu choices to the Inventory (add product, receive stock, record sale, stock report)",
+        "Turn failed operations into friendly messages",
+        "Test a whole interactive session without a keyboard",
+        "Run the second complete milestone of the application"
+      ],
+      "path": "lessons/08-console-menu",
+      "readme": "lessons/08-console-menu/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/08-console-menu/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/08-console-menu"
+    },
+    {
+      "number": 9,
+      "slug": "09-classes-and-objects",
+      "title": "09 — Classes and objects",
+      "week": 3,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "M3 — Domain model (part 1 of 8)",
+      "objectives": [
+        "Explain the difference between a class and an object",
+        "Write a class with fields, a constructor and methods",
+        "Create objects with new and call their methods",
+        "Replace the Inventory's parallel collections with a list of Product objects"
+      ],
+      "path": "lessons/09-classes-and-objects",
+      "readme": "lessons/09-classes-and-objects/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/09-classes-and-objects/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/09-classes-and-objects"
+    },
+    {
+      "number": 10,
+      "slug": "10-encapsulation",
+      "title": "10 — Encapsulation",
+      "week": 3,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "M3 — Domain model (part 2 of 8)",
+      "objectives": [
+        "Make fields private and expose them through getters and setters",
+        "Put validation inside the class so an object can never hold bad data",
+        "Explain why returning an internal list is dangerous and how to return a copy",
+        "Use final for values that must never change"
+      ],
+      "path": "lessons/10-encapsulation",
+      "readme": "lessons/10-encapsulation/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/10-encapsulation/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/10-encapsulation"
+    },
+    {
+      "number": 11,
+      "slug": "11-product-and-customer",
+      "title": "11 — Product and Customer classes",
+      "week": 3,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "M3 — Domain model (part 3 of 8)",
+      "objectives": [
+        "Model real things (Customer, Sale, SaleLine) as small classes",
+        "Let one object hold other objects (a Sale holds a Customer and a list of SaleLines)",
+        "Replace a running total with objects that can answer the question themselves",
+        "Overload a method so old callers keep working"
+      ],
+      "path": "lessons/11-product-and-customer",
+      "readme": "lessons/11-product-and-customer/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/11-product-and-customer/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/11-product-and-customer"
+    },
+    {
+      "number": 12,
+      "slug": "12-static-vs-instance",
+      "title": "12 — Static vs instance",
+      "week": 3,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "M3 — Domain model (part 4 of 8)",
+      "objectives": [
+        "Explain the difference between a static member and an instance member",
+        "Write constants with static final and static helper methods",
+        "Explain why main is static and why shared mutable state is risky",
+        "Move a rule to the class it belongs to"
+      ],
+      "path": "lessons/12-static-vs-instance",
+      "readme": "lessons/12-static-vs-instance/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/12-static-vs-instance/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/12-static-vs-instance"
+    },
+    {
+      "number": 13,
+      "slug": "13-inheritance",
+      "title": "13 — Inheritance",
+      "week": 4,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "M3 — Domain model (part 5 of 8)",
+      "objectives": [
+        "Use extends to share fields and methods between related classes",
+        "Call a parent constructor and parent method with super",
+        "Override a method with @Override and explain which version runs",
+        "Decide when inheritance fits (IS-A) and when it does not"
+      ],
+      "path": "lessons/13-inheritance",
+      "readme": "lessons/13-inheritance/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/13-inheritance/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/13-inheritance"
+    },
+    {
+      "number": 14,
+      "slug": "14-interfaces-and-polymorphism",
+      "title": "14 — Interfaces and polymorphism",
+      "week": 4,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "M3 — Domain model (part 6 of 8)",
+      "objectives": [
+        "Define an interface and implement it in several classes",
+        "Write code against the interface so any implementation works",
+        "Explain polymorphism and the difference between an interface and a parent class",
+        "Add discounts to the sale model without changing Sale for each new kind"
+      ],
+      "path": "lessons/14-interfaces-and-polymorphism",
+      "readme": "lessons/14-interfaces-and-polymorphism/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/14-interfaces-and-polymorphism/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/14-interfaces-and-polymorphism"
+    },
+    {
+      "number": 15,
+      "slug": "15-enums-and-records",
+      "title": "15 — Enums and records",
+      "week": 4,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "M3 — Domain model (part 7 of 8)",
+      "objectives": [
+        "Replace \"magic\" strings with enums that allow only valid values",
+        "Give an enum fields, methods and a switch expression",
+        "Write a record for plain, unchanging data",
+        "Log every stock change as a StockMovement"
+      ],
+      "path": "lessons/15-enums-and-records",
+      "readme": "lessons/15-enums-and-records/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/15-enums-and-records/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/15-enums-and-records"
+    },
+    {
+      "number": 16,
+      "slug": "16-exceptions",
+      "title": "16 — Exceptions",
+      "week": 4,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "M3 — Domain model (complete)",
+      "objectives": [
+        "Explain what an exception is and what try, catch, finally and throw do",
+        "Write custom exceptions and throw them when a rule is broken",
+        "Replace -1, false and null error codes with exceptions",
+        "Decide between checked and unchecked exceptions",
+        "Finish Milestone M3 and explain the shop's domain model"
+      ],
+      "path": "lessons/16-exceptions",
+      "readme": "lessons/16-exceptions/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/16-exceptions/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/16-exceptions"
+    },
+    {
+      "number": 17,
+      "slug": "17-generics-and-collections",
+      "title": "17 — Generics and collections",
+      "week": 5,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "none (builds toward M4)",
+      "objectives": [
+        "Explain what the type in angle brackets (List<String>, Map<String, Integer>) means and what the compiler checks",
+        "Choose between List, Set and Map for a job and explain why",
+        "Write a small generic class and a generic method",
+        "Sort objects with a Comparator",
+        "Replace a slow list search in the app with a Map lookup"
+      ],
+      "path": "lessons/17-generics-and-collections",
+      "readme": "lessons/17-generics-and-collections/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/17-generics-and-collections/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/17-generics-and-collections"
+    },
+    {
+      "number": 18,
+      "slug": "18-streams",
+      "title": "18 — Streams",
+      "week": 5,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "none (builds toward M4)",
+      "objectives": [
+        "Explain a stream as a pipeline: source, steps, and one ending",
+        "Use filter, map, sorted, limit, distinct and mapToInt/sum on a list",
+        "Finish a stream with toList, collect (groupingBy, counting, joining) or an Optional result",
+        "Rewrite a for loop as a stream and say when the loop is still the clearer choice",
+        "Build shop reports (restock list, revenue per payment method, biggest sale) with streams"
+      ],
+      "path": "lessons/18-streams",
+      "readme": "lessons/18-streams/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/18-streams/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/18-streams"
+    },
+    {
+      "number": 19,
+      "slug": "19-files-and-csv",
+      "title": "19 — Files and CSV",
+      "week": 5,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "none (builds toward M4)",
+      "objectives": [
+        "Read and write text files with java.nio.file.Files and Path",
+        "Explain the CSV format, including why a comma inside a field needs quotes",
+        "Handle IOException (a checked exception) and report problems inside a file with line numbers",
+        "Use try-with-resources so files are always closed",
+        "Test file code with JUnit's @TempDir so no test leaves files behind",
+        "Make the shop save and load its products, sales and stock movements"
+      ],
+      "path": "lessons/19-files-and-csv",
+      "readme": "lessons/19-files-and-csv/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/19-files-and-csv/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/19-files-and-csv"
+    },
+    {
+      "number": 20,
+      "slug": "20-bigdecimal-and-time",
+      "title": "20 — BigDecimal and java.time",
+      "week": 5,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "M4 — The app saves to files (complete)",
+      "objectives": [
+        "Explain why money is not stored in double and use BigDecimal correctly (build from text, compareTo, rounding rules)",
+        "Replace int centavos with BigDecimal pesos across a whole application and keep every test meaningful",
+        "Use LocalDate, LocalTime, LocalDateTime, Duration, Period and DateTimeFormatter",
+        "Inject a java.time.Clock so code that asks \"what time is it?\" can be tested",
+        "Keep reading old data files after a format change",
+        "Finish Milestone M4 and explain how the shop saves and loads its data"
+      ],
+      "path": "lessons/20-bigdecimal-and-time",
+      "readme": "lessons/20-bigdecimal-and-time/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/20-bigdecimal-and-time/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/20-bigdecimal-and-time"
+    },
+    {
+      "number": 21,
+      "slug": "21-junit-and-tdd",
+      "title": "21 — JUnit and test-driven development",
+      "week": 6,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "none (professional practice week)",
+      "objectives": [
+        "Write JUnit 5 tests with the right assertion (assertEquals, assertThrows, assertAll) and the Arrange-Act-Assert layout",
+        "Name tests so a failure explains itself",
+        "Write parameterized tests (CsvSource, MethodSource, ValueSource) for boundary values",
+        "Practise red-green-refactor: write a failing test first, make it pass with the least code, then tidy",
+        "Add a feature to the shop (reorder suggestions) test-first, and decide what is worth testing"
+      ],
+      "path": "lessons/21-junit-and-tdd",
+      "readme": "lessons/21-junit-and-tdd/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/21-junit-and-tdd/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/21-junit-and-tdd"
+    },
+    {
+      "number": 22,
+      "slug": "22-debugging",
+      "title": "22 — Debugging",
+      "week": 6,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "none (professional practice week)",
+      "objectives": [
+        "Read a stack trace from the top and find the first line of your own code",
+        "Reproduce a bug with the smallest input and a failing test",
+        "Use an IDE debugger (breakpoint, step over, step into, step out, watch a variable) and print debugging",
+        "Recognise the common exceptions and the mistakes behind them",
+        "Find and fix six planted bugs in the shop app and six more in small methods"
+      ],
+      "path": "lessons/22-debugging",
+      "readme": "lessons/22-debugging/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/22-debugging/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/22-debugging"
+    },
+    {
+      "number": 23,
+      "slug": "23-git-and-github",
+      "title": "23 — Git and GitHub flow",
+      "week": 6,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "none (professional practice week)",
+      "objectives": [
+        "Explain the working folder, the staging area and the repository, and what a commit, a branch and a remote are",
+        "Use status, add, commit, log, diff, switch, push, pull and restore in a daily loop",
+        "Make a change on a branch, push it and open a pull request on GitHub",
+        "Read and resolve a merge conflict",
+        "Write commit messages and branch names a team can read, and record your work in a checked file"
+      ],
+      "path": "lessons/23-git-and-github",
+      "readme": "lessons/23-git-and-github/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/23-git-and-github/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/23-git-and-github"
+    },
+    {
+      "number": 24,
+      "slug": "24-logging-and-clean-code",
+      "title": "24 — Logging and clean code",
+      "week": 6,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "none (Week 6 complete: professional practice)",
+      "objectives": [
+        "Explain why a program writes a log and choose the right level for a message",
+        "Use java.util.logging (Logger, Level, Handler, Formatter) with no extra library",
+        "Test that the right messages are logged, without printing during tests",
+        "Refactor code for readability with names, constants, small methods and guard clauses, keeping all tests green",
+        "Complete Week 6 (JUnit, debugging, Git, logging) and describe how the pieces fit"
+      ],
+      "path": "lessons/24-logging-and-clean-code",
+      "readme": "lessons/24-logging-and-clean-code/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/24-logging-and-clean-code/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/24-logging-and-clean-code"
+    },
+    {
+      "number": 25,
+      "slug": "25-relational-thinking",
+      "title": "25 — Relational thinking and ERD",
+      "week": 7,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "none (Week 7: databases I)",
+      "objectives": [
+        "Explain why a shop keeps its data in related tables instead of one big sheet",
+        "Identify tables, rows, columns, primary keys and foreign keys in the shop's database",
+        "Classify a relationship as one-to-many or many-to-many and say which table holds the link",
+        "Read an Entity-Relationship Diagram (ERD) and draw one from a description",
+        "Run the SQL practice harness and read the database's own description of its tables"
+      ],
+      "path": "lessons/25-relational-thinking",
+      "readme": "lessons/25-relational-thinking/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/25-relational-thinking/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/25-relational-thinking"
+    },
+    {
+      "number": 26,
+      "slug": "26-sql-basics",
+      "title": "26 — SQL basics",
+      "week": 7,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "none (Week 7: databases I)",
+      "objectives": [
+        "Write SELECT queries with WHERE, ORDER BY, LIMIT, LIKE, IN and BETWEEN",
+        "Compute new columns with expressions, aliases and CASE",
+        "Summarise rows with COUNT, SUM, AVG, MIN, MAX and GROUP BY",
+        "Explain NULL and test for it with IS NULL",
+        "Change data safely with INSERT, UPDATE and DELETE, always checking the WHERE"
+      ],
+      "path": "lessons/26-sql-basics",
+      "readme": "lessons/26-sql-basics/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/26-sql-basics/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/26-sql-basics"
+    },
+    {
+      "number": 27,
+      "slug": "27-joins-and-reports",
+      "title": "27 — Joins and reports",
+      "week": 7,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "none (Week 7: databases I)",
+      "objectives": [
+        "Combine tables with JOIN by following foreign keys",
+        "Choose between INNER JOIN and LEFT JOIN and explain what each keeps",
+        "Find rows with no match using LEFT JOIN ... IS NULL",
+        "Build reports with joins, GROUP BY, HAVING and aggregates",
+        "Spot the two classic join mistakes (missing ON, counting lines instead of sales)"
+      ],
+      "path": "lessons/27-joins-and-reports",
+      "readme": "lessons/27-joins-and-reports/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/27-joins-and-reports/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/27-joins-and-reports"
+    },
+    {
+      "number": 28,
+      "slug": "28-schema-design",
+      "title": "28 — Schema design for the shop",
+      "week": 7,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "none (Week 7 complete: databases I)",
+      "objectives": [
+        "Design tables from a description of the shop (nouns to tables, verbs to relationships)",
+        "Choose keys, column types and constraints (NOT NULL, UNIQUE, CHECK, FOREIGN KEY)",
+        "Explain first, second and third normal form in plain words, and when to copy data on purpose",
+        "Choose ON DELETE behaviour for a foreign key and explain the choice",
+        "Add indexes where the shop searches, joins and sorts"
+      ],
+      "path": "lessons/28-schema-design",
+      "readme": "lessons/28-schema-design/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/28-schema-design/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/28-schema-design"
+    },
+    {
+      "number": 29,
+      "slug": "29-jdbc",
+      "title": "29 — JDBC: Java talks to the database",
+      "week": 8,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "none (Week 8: databases II; M5 arrives in lesson 32)",
+      "objectives": [
+        "Open a JDBC connection to H2, in memory and in a file",
+        "Run SELECT, INSERT and UPDATE with PreparedStatement and read a ResultSet",
+        "Close every JDBC resource with try-with-resources",
+        "Explain SQL injection and prevent it with ? parameters",
+        "Wrap SQLException in the app's own unchecked exception"
+      ],
+      "path": "lessons/29-jdbc",
+      "readme": "lessons/29-jdbc/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/29-jdbc/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/29-jdbc"
+    },
+    {
+      "number": 30,
+      "slug": "30-repository-pattern",
+      "title": "30 — The repository pattern",
+      "week": 8,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "none (Week 8: databases II; M5 arrives in lesson 32)",
+      "objectives": [
+        "Explain what a repository is and why the app depends on an interface, not on JDBC",
+        "Implement one repository interface three ways (memory, file, database)",
+        "Prove that implementations behave the same with one shared contract test",
+        "Move the shop's rules into a service that uses only repository interfaces",
+        "Run the console app on either the in-memory Inventory or the database, through the Shop interface"
+      ],
+      "path": "lessons/30-repository-pattern",
+      "readme": "lessons/30-repository-pattern/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/30-repository-pattern/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/30-repository-pattern"
+    },
+    {
+      "number": 31,
+      "slug": "31-transactions",
+      "title": "31 — Transactions: a sale is all-or-nothing",
+      "week": 8,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "none (Week 8: databases II; M5 arrives in lesson 32)",
+      "objectives": [
+        "Explain a transaction and the four ACID promises in plain words",
+        "Use setAutoCommit(false), commit() and rollback() correctly in JDBC",
+        "Make a multi-step sale succeed or fail as one unit and prove it with a failing step",
+        "Explain isolation and the lost-update problem, and prevent overselling with a guarded UPDATE",
+        "Keep transaction code out of the repositories and out of the menu"
+      ],
+      "path": "lessons/31-transactions",
+      "readme": "lessons/31-transactions/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/31-transactions/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/31-transactions"
+    },
+    {
+      "number": 32,
+      "slug": "32-migrations",
+      "title": "32 — Migrations: the database grows with the app",
+      "week": 8,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "M5 — Database-backed app (end of lesson 32)",
+      "objectives": [
+        "Explain why a database design must be changed with numbered, versioned scripts and never by hand",
+        "Write a migration file with the V{n}__{description}.sql naming rule",
+        "Build a small migration runner with a history table and checksums",
+        "Upgrade a database that already holds data without losing it",
+        "Run the finished app on an H2 file database and explain how Flyway does the same job professionally"
+      ],
+      "path": "lessons/32-migrations",
+      "readme": "lessons/32-migrations/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/32-migrations/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/32-migrations"
+    },
+    {
+      "number": 33,
+      "slug": "33-how-the-web-works",
+      "title": "33 — How the web works: HTTP requests and responses",
+      "week": 9,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "none (M6 — REST API is finished in lesson 40)",
+      "objectives": [
+        "Explain what a client, a server, a request and a response are, and name the parts of each",
+        "Read and write an HTTP request line, headers, a status code and a body",
+        "Choose the right method (GET, POST, PUT, DELETE) and the right status code (200, 201, 400, 404, 409, 500) for a job",
+        "Run a small web server and call it with curl and with Java's HttpClient",
+        "Say which parts of a web server you wrote by hand, and why a framework will take them over"
+      ],
+      "path": "lessons/33-how-the-web-works",
+      "readme": "lessons/33-how-the-web-works/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/33-how-the-web-works/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/33-how-the-web-works"
+    },
+    {
+      "number": 34,
+      "slug": "34-rest-design",
+      "title": "34 — REST design: resources, verbs and status codes",
+      "week": 9,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "none (M6 — REST API is finished in lesson 40)",
+      "objectives": [
+        "Explain what a REST API is and name its four ideas (resource, URL, method, status code)",
+        "Design the URLs, methods and status codes for Products, Sales and Reports on paper before writing code",
+        "Choose between 200, 201, 204, 400, 404, 405, 409 and 500 for a given situation",
+        "Map the shop's exceptions to HTTP status codes in one place",
+        "Test an API against its design table with plain Java, with no server and no framework"
+      ],
+      "path": "lessons/34-rest-design",
+      "readme": "lessons/34-rest-design/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/34-rest-design/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/34-rest-design"
+    },
+    {
+      "number": 35,
+      "slug": "35-json",
+      "title": "35 — JSON: the language APIs speak",
+      "week": 9,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "none (M6 — REST API is finished in lesson 40)",
+      "objectives": [
+        "Read and write JSON (objects, arrays, text, numbers, true/false, null) by eye",
+        "Use Jackson to turn Java records into JSON text and JSON text back into records",
+        "Explain why the API sends small DTO records and never the domain classes",
+        "Set up one ObjectMapper correctly for money (BigDecimal) and dates (LocalDateTime)",
+        "Run the shop's whole REST API in plain Java and call it with curl"
+      ],
+      "path": "lessons/35-json",
+      "readme": "lessons/35-json/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/35-json/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/35-json"
+    },
+    {
+      "number": 36,
+      "slug": "36-spring-boot-hello",
+      "title": "36 — Spring Boot: your first app and what auto-configuration is",
+      "week": 9,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "none (M6 — REST API is finished in lesson 40)",
+      "objectives": [
+        "Explain what Spring Boot adds on top of plain Java and what a starter dependency is",
+        "Run a Spring Boot application with Maven and as a single runnable jar",
+        "Write a @RestController with @GetMapping, @RequestParam and @PathVariable",
+        "Explain dependency injection and what a bean is, and define one with @Bean",
+        "Explain auto-configuration and read the --debug report to see what was and was not configured"
+      ],
+      "path": "lessons/36-spring-boot-hello",
+      "readme": "lessons/36-spring-boot-hello/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/36-spring-boot-hello/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/36-spring-boot-hello"
+    },
+    {
+      "number": 37,
+      "slug": "37-controllers-and-services",
+      "title": "37 — Controllers and services: the shop on Spring Boot",
+      "week": 10,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "none (M6 — REST API is finished in lesson 40)",
+      "objectives": [
+        "Explain the three layers of the API (controller, service, repository) and what each one is allowed to know",
+        "Write @RestController methods with @RequestMapping, @PostMapping, @PutMapping, @DeleteMapping and @RequestBody",
+        "Answer with the right status code and a Location header using ResponseEntity and @ResponseStatus",
+        "Wire the lesson 32 shop (Database, repositories, ShopService) into Spring with @Configuration and @Bean",
+        "Run the REST API for products, sales and reports on an H2 file database and show that data survives a restart"
+      ],
+      "path": "lessons/37-controllers-and-services",
+      "readme": "lessons/37-controllers-and-services/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/37-controllers-and-services/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/37-controllers-and-services"
+    },
+    {
+      "number": 38,
+      "slug": "38-spring-data-jpa",
+      "title": "38 — Spring Data JPA: from JDBC to repositories you only declare",
+      "week": 10,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "none (M6 — REST API is finished in lesson 40)",
+      "objectives": [
+        "Explain what an ORM and JPA are, and what an entity is, with the annotations @Entity, @Id, @Column and @ManyToOne",
+        "Declare a Spring Data repository and let a method name become a query",
+        "Replace the JDBC repositories of lesson 30 with JPA ones without changing ShopService",
+        "Explain what Flyway, a connection pool and ddl-auto=validate do for the app",
+        "Compare JDBC and JPA honestly: what you gain, what you pay, and what the N+1 problem is",
+        "Test a repository with a database slice test and prove it follows the same contract as the others"
+      ],
+      "path": "lessons/38-spring-data-jpa",
+      "readme": "lessons/38-spring-data-jpa/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/38-spring-data-jpa/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/38-spring-data-jpa"
+    },
+    {
+      "number": 39,
+      "slug": "39-validation-and-errors",
+      "title": "39 — Validation and errors: say what is wrong, the same way every time",
+      "week": 10,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "none (M6 — REST API is finished in lesson 40)",
+      "objectives": [
+        "Put Bean Validation rules (@NotBlank, @NotNull, @Min, @Size, @Pattern ...) on request records and switch them on with @Valid",
+        "Explain why a required number is an Integer and not an int",
+        "Write one @RestControllerAdvice that turns every problem into the same ErrorResponse",
+        "Map the shop's exceptions to the right HTTP status in one place and hide the details of a real bug",
+        "List which problem becomes 400, 404, 405, 409, 415 and 500, and say why"
+      ],
+      "path": "lessons/39-validation-and-errors",
+      "readme": "lessons/39-validation-and-errors/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/39-validation-and-errors/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/39-validation-and-errors"
+    },
+    {
+      "number": 40,
+      "slug": "40-testing-with-mockmvc",
+      "title": "40 — Testing the API with MockMvc",
+      "week": 10,
+      "hours": 5,
+      "level": "beginner",
+      "milestone": "M6 — REST API for the Inventory & Sales System (end of lesson 40)",
+      "objectives": [
+        "Choose between a plain unit test, a slice test (@WebMvcTest, @DataJpaTest) and a full test (@SpringBootTest) for a given job",
+        "Send requests with MockMvc and check status, headers and JSON with jsonPath",
+        "Replace a service with a Mockito fake using @MockitoBean, and check that a bad request never reaches it",
+        "Write a full-application scenario test that tells one story through every layer",
+        "Keep API tests fast, deterministic and free of leftovers"
+      ],
+      "path": "lessons/40-testing-with-mockmvc",
+      "readme": "lessons/40-testing-with-mockmvc/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/40-testing-with-mockmvc/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/40-testing-with-mockmvc"
+    },
+    {
+      "number": 41,
+      "slug": "41-auth-basics",
+      "title": "41 — Authentication basics: who is calling?",
+      "week": 11,
+      "hours": 5,
+      "level": "intermediate",
+      "milestone": "none (secures the M6 API; M7 is the end of lesson 48)",
+      "objectives": [
+        "Explain the difference between authentication (who are you?) and authorization (what may you do?), and between status 401 and 403",
+        "Explain why passwords are stored as salted hashes, and why BCrypt comes from a library and is never written by hand",
+        "Add Spring Security to the API so that every endpoint except /hello needs a valid username and password (HTTP Basic)",
+        "Store users in the database with a Flyway migration and load them through a UserDetailsService",
+        "Test a secured API with MockMvc and with a real HTTP client"
+      ],
+      "path": "lessons/41-auth-basics",
+      "readme": "lessons/41-auth-basics/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/41-auth-basics/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/41-auth-basics"
+    },
+    {
+      "number": 42,
+      "slug": "42-roles",
+      "title": "42 — Roles: admin and cashier",
+      "week": 11,
+      "hours": 5,
+      "level": "intermediate",
+      "milestone": "none (secures the M6 API; M7 is the end of lesson 48)",
+      "objectives": [
+        "Explain role-based access control and the principle of least privilege",
+        "Write the rules table of an API with Spring Security, specific rules first and a safe catch-all last",
+        "Return 403 in the same JSON error shape as every other error",
+        "Add a column to a table that already has rows with a migration, without breaking existing users",
+        "Test every rule with a matrix test, a slice test with @WithMockUser, and a real login"
+      ],
+      "path": "lessons/42-roles",
+      "readme": "lessons/42-roles/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/42-roles/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/42-roles"
+    },
+    {
+      "number": 43,
+      "slug": "43-ci-pipeline",
+      "title": "43 — A CI pipeline with GitHub Actions",
+      "week": 11,
+      "hours": 5,
+      "level": "intermediate",
+      "milestone": "none (M7 is the end of lesson 48)",
+      "objectives": [
+        "Explain continuous integration and what a pipeline protects you from",
+        "Read a GitHub Actions workflow file line by line (triggers, jobs, steps, actions)",
+        "Write a pipeline for your own project that builds and tests on every push and pull request",
+        "Speed it up with a dependency cache, and show its status with a badge",
+        "Test a workflow file like code, and keep it safe (read-only permissions, pinned actions, no secrets in the file)"
+      ],
+      "path": "lessons/43-ci-pipeline",
+      "readme": "lessons/43-ci-pipeline/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/43-ci-pipeline/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/43-ci-pipeline"
+    },
+    {
+      "number": 44,
+      "slug": "44-api-docs",
+      "title": "44 — API documentation with OpenAPI",
+      "week": 11,
+      "hours": 5,
+      "level": "intermediate",
+      "milestone": "none (M7 is the end of lesson 48)",
+      "objectives": [
+        "Explain what OpenAPI is and why an API needs a machine-readable description",
+        "Add springdoc to the Spring Boot API and read the generated document at /v3/api-docs",
+        "Improve the description with a title, summaries, tags, a sign-in method and the error shape",
+        "Use the Swagger UI page to try an endpoint with a password",
+        "Test the documentation against the design table so it cannot drift away from the code"
+      ],
+      "path": "lessons/44-api-docs",
+      "readme": "lessons/44-api-docs/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/44-api-docs/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/44-api-docs"
+    },
+    {
+      "number": 45,
+      "slug": "45-docker",
+      "title": "45 — Docker: ship the API in a container",
+      "week": 12,
+      "hours": 5,
+      "level": "intermediate",
+      "milestone": "none (M7 is the end of lesson 48)",
+      "objectives": [
+        "Explain what a container and an image are, and why teams ship containers instead of \"install Java and copy the jar\"",
+        "Write a multi-stage Dockerfile for the Spring Boot API with a pinned base image, a non-root user and an exec-form entry point",
+        "Order the Dockerfile so the dependency download is cached",
+        "Write a .dockerignore and a Docker Compose file that runs the API with a volume and settings from the environment",
+        "Test a Dockerfile and a compose file as text, and be honest about what such a test cannot prove"
+      ],
+      "path": "lessons/45-docker",
+      "readme": "lessons/45-docker/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/45-docker/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/45-docker"
+    },
+    {
+      "number": 46,
+      "slug": "46-deploy",
+      "title": "46 — Deploy: configuration and where the app lives",
+      "week": 12,
+      "hours": 5,
+      "level": "intermediate",
+      "milestone": "none (M7 is the end of lesson 48)",
+      "objectives": [
+        "Explain what deploying means and how the options (your own machine, a platform that builds your Dockerfile, a virtual machine) differ",
+        "Configure the same jar for your PC and for a server with profiles and environment variables, with no secret in the code or the image",
+        "Make the application refuse to start with a missing, weak or example password",
+        "Follow a concrete, free, step-by-step path to run the containerised API from a .env file",
+        "Explain honestly the limits of free hosting (sleeping apps, ephemeral disks, changing prices) and of a file database"
+      ],
+      "path": "lessons/46-deploy",
+      "readme": "lessons/46-deploy/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/46-deploy/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/46-deploy"
+    },
+    {
+      "number": 47,
+      "slug": "47-monitoring",
+      "title": "47 — Monitoring: health checks, metrics and logs",
+      "week": 12,
+      "hours": 5,
+      "level": "intermediate",
+      "milestone": "none (M7 is the end of lesson 48)",
+      "objectives": [
+        "Explain health checks, liveness versus readiness, metrics and logs, and which question each one answers",
+        "Add Spring Boot Actuator and expose only the endpoints that are needed",
+        "Secure the actuator so strangers see a verdict and only admins see details",
+        "Give every request an id and put it in every log line, and switch to one-JSON-object-per-line logs in production",
+        "Test who may see what, and that dangerous endpoints are not exposed at all"
+      ],
+      "path": "lessons/47-monitoring",
+      "readme": "lessons/47-monitoring/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/47-monitoring/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/47-monitoring"
+    },
+    {
+      "number": 48,
+      "slug": "48-capstone",
+      "title": "48 — Capstone and portfolio",
+      "week": 12,
+      "hours": 5,
+      "level": "intermediate",
+      "milestone": "M7 — The complete secured, documented, containerised, monitored Inventory & Sales API (end of lesson 48)",
+      "objectives": [
+        "Describe the finished system layer by layer and say which lesson built each part",
+        "Add a feature to the finished system through every layer (service, endpoint, design table, security rule, documentation, tests)",
+        "Plan, build and present a capstone feature of your own choice with a spec, tests, CI and a README",
+        "Present the work in a 5-minute demo and write an honest portfolio README and resume bullets",
+        "Explain what the system is not yet, and what to learn next"
+      ],
+      "path": "lessons/48-capstone",
+      "readme": "lessons/48-capstone/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/rvirayii-est/java-by-building/main/lessons/48-capstone/README.md",
+      "url": "https://github.com/rvirayii-est/java-by-building/tree/main/lessons/48-capstone"
+    }
+  ]
+}

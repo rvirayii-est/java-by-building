@@ -8,3 +8,4 @@ shop-data/
 *.mv.db
 *.trace.db
 *.lock.db
+.env

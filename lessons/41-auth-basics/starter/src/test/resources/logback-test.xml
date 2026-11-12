@@ -1,0 +1,9 @@
+<configuration>
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder><pattern>%d{HH:mm:ss.SSS} %-5level %logger{30} - %msg%n</pattern></encoder>
+  </appender>
+  <!-- The error handler logs bugs and database faults ON PURPOSE (with their stack traces). Several tests cause them on purpose too,
+       so this one logger is silent while testing; everything else shows warnings and errors only. -->
+  <logger name="dev.javabybuilding.api.ApiExceptionHandler" level="OFF"/>
+  <root level="WARN"><appender-ref ref="STDOUT"/></root>
+</configuration>

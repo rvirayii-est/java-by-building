@@ -1,0 +1,27 @@
+# Docker Compose: describe the containers once, start them with one command.
+#     cp lessons/46-deploy/starter/.env.example lessons/46-deploy/starter/.env      (then edit the two passwords!)
+#     docker compose -f lessons/46-deploy/starter/compose.yaml up --build
+# Stop with Ctrl+C (or "docker compose ... down"). "down -v" ALSO deletes the data volume.
+# Compose reads the file called .env that sits NEXT TO this file. Never commit it (.gitignore and .dockerignore already skip it).
+name: shop
+
+services:
+  shop-api:
+    build:
+      context: ../../..                                   # the repository root: the parent pom.xml is there
+      dockerfile: lessons/46-deploy/starter/Dockerfile
+    image: java-by-building/shop-api:46
+    ports:
+      - "8080:8080"                                       # your PC's port 8080 -> the container's port 8080
+    environment:
+      SPRING_PROFILES_ACTIVE: prod                        # loads application-prod.properties: no default passwords, no sample data
+      SHOP_DATA_DIR: /data
+      # ${NAME:?message} means: the variable is REQUIRED; if it is missing, compose stops and prints the message. No secret has a default.
+      SHOP_ADMIN_PASSWORD: ${SHOP_ADMIN_PASSWORD:-admin123}   # TODO 3: a secret must have NO default. Make it required: ${SHOP_ADMIN_PASSWORD:?Set SHOP_ADMIN_PASSWORD in the .env file}
+      SHOP_CASHIER_PASSWORD: ${SHOP_CASHIER_PASSWORD:-cashier123}   # TODO 3: the same here
+    volumes:
+      - shop-data:/data                                   # a named volume: survives "docker compose down"
+    restart: unless-stopped
+
+volumes:
+  shop-data:

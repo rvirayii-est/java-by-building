@@ -1,0 +1,18 @@
+# Docker Compose: describe the containers once, start them with one command.
+#     docker compose -f lessons/45-docker/starter/compose.yaml up --build
+name: shop
+
+services:
+  shop-api:
+    build:
+      context: ../../..
+      dockerfile: lessons/45-docker/starter/Dockerfile
+    image: java-by-building/shop-api:45
+    # TODO 5: publish the port:   ports: ["8080:8080"]
+    environment:
+      SHOP_DATA_DIR: /data
+      # TODO 6: take the passwords from the environment, with a learning default: ${SHOP_ADMIN_PASSWORD:-admin123}
+      SHOP_SECURITY_ADMIN_PASSWORD: admin123
+      SHOP_SECURITY_CASHIER_PASSWORD: cashier123
+    # TODO 7: keep the database in a named volume:   volumes: [ "shop-data:/data" ]   and declare it under a top-level "volumes:"
+    restart: unless-stopped

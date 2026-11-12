@@ -18,6 +18,9 @@
     <!-- Spring Boot (lesson 36 on). Its BOM below fixes the version of Spring, Jackson (lesson 35), Hibernate, Flyway ... so
          that they fit each other: a lesson's pom names a library and never its version. 3.5.x is the last 3.x line, for Java 17+. -->
     <spring-boot.version>3.5.16</spring-boot.version>
+    <!-- springdoc (lesson 44): builds the OpenAPI description of the API from the controllers. The 2.8.x line is the one made for Spring Boot 3.5
+         (springdoc 3.x needs Spring Boot 4). Checked: it exists on Maven Central. -->
+    <springdoc.version>2.8.17</springdoc.version>
   </properties>
 
   <!-- Default build = the reference solutions (these must always pass). -->
@@ -62,6 +65,14 @@
     <module>lessons/38-spring-data-jpa/solution</module>
     <module>lessons/39-validation-and-errors/solution</module>
     <module>lessons/40-testing-with-mockmvc/solution</module>
+    <module>lessons/41-auth-basics/solution</module>
+    <module>lessons/42-roles/solution</module>
+    <module>lessons/43-ci-pipeline/solution</module>
+    <module>lessons/44-api-docs/solution</module>
+    <module>lessons/45-docker/solution</module>
+    <module>lessons/46-deploy/solution</module>
+    <module>lessons/47-monitoring/solution</module>
+    <module>lessons/48-capstone/solution</module>
   </modules>
 
   <profiles>
@@ -150,6 +161,22 @@
         <module>lessons/39-validation-and-errors/exercises</module>
         <module>lessons/40-testing-with-mockmvc/starter</module>
         <module>lessons/40-testing-with-mockmvc/exercises</module>
+        <module>lessons/41-auth-basics/starter</module>
+        <module>lessons/41-auth-basics/exercises</module>
+        <module>lessons/42-roles/starter</module>
+        <module>lessons/42-roles/exercises</module>
+        <module>lessons/43-ci-pipeline/starter</module>
+        <module>lessons/43-ci-pipeline/exercises</module>
+        <module>lessons/44-api-docs/starter</module>
+        <module>lessons/44-api-docs/exercises</module>
+        <module>lessons/45-docker/starter</module>
+        <module>lessons/45-docker/exercises</module>
+        <module>lessons/46-deploy/starter</module>
+        <module>lessons/46-deploy/exercises</module>
+        <module>lessons/47-monitoring/starter</module>
+        <module>lessons/47-monitoring/exercises</module>
+        <module>lessons/48-capstone/starter</module>
+        <module>lessons/48-capstone/exercises</module>
       </modules>
     </profile>
   </profiles>
@@ -169,6 +196,12 @@
         <version>${junit.version}</version>
         <type>pom</type>
         <scope>import</scope>
+      </dependency>
+      <!-- springdoc is not part of Spring Boot, so its version is listed here (lesson 44). Lessons before 44 do not use it. -->
+      <dependency>
+        <groupId>org.springdoc</groupId>
+        <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+        <version>${springdoc.version}</version>
       </dependency>
       <!-- A BOM ("bill of materials") is a list of versions that are known to work together. Importing it only adds
            version numbers: the lessons before 35 do not use any of these libraries, so they are untouched. -->

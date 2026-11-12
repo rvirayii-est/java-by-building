@@ -71,3 +71,10 @@ cd lessons/NN-slug/starter
 ../../../mvnw test          # Windows:  ..\..\..\mvnw.cmd test
 ```
 Red tests are normal at the start. Make them green. Peek at `solution/` only after trying.
+
+## From lesson 41: passwords, `curl -u` and an optional extra
+- From lesson 41 the API needs a login. `curl -u admin:admin123 ...` sends it (these demo passwords are for learning on your own PC only). In PowerShell use `curl.exe -u admin:admin123 ...`.
+- From lesson 43 you need a free **GitHub** account to see a CI pipeline run on your own repository.
+- **Docker** (Docker Desktop on Windows/macOS, Docker Engine on Linux) is only needed for the optional parts of lessons 45-46. If it will not install on your PC (Windows Home without virtualisation, old hardware), skip those parts: your instructor assesses lesson 48 without it.
+- On a slow or offline network, see "Offline and slow-network tips" in [INSTRUCTOR-GUIDE.md](INSTRUCTOR-GUIDE.md).
+- Windows without Git Bash: `scripts\run-examples.ps1` is the PowerShell version of `scripts/run-examples.sh` (`powershell -ExecutionPolicy Bypass -File scripts\run-examples.ps1`).

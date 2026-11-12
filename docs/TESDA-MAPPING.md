@@ -18,9 +18,18 @@
 | Use version control and collaborate | 6 | Lesson 23, PR workflow in CONTRIBUTING |
 | Design and use relational databases (SQL, JDBC) | 7–8 | Lessons 25–32, M5 |
 | Develop web services / REST APIs | 9–10 | Lessons 33–40, M6 |
-| Apply application security basics | 11 | Lessons 41–42 |
-| Package, deploy and document an application | 11–12 | Lessons 43–48, M7 |
-| Work to specification; document and present work | all | `docs/SPEC.md`, per-lesson completion criteria, capstone |
+| Apply application security basics (authentication, password hashing, role-based access) | 11 | Lessons 41–42, `AuthenticationTest`, `RolesTest` (who may do what, as a matrix) |
+| Package, configure, document and operate an application (CI, OpenAPI, containers, environment configuration, health checks and logs) | 11–12 | Lessons 43–47, `OpenApiTest`, `DockerFilesTest`, `ProfilesTest`, `ActuatorTest`; M7 |
+| Work to specification; document and present work | all | `docs/SPEC.md`, per-lesson completion criteria; lesson 48: capstone spec, portfolio README, 5-minute demo and a ten-criterion assessor record (`lessons/48-capstone`) |
 
 **Assessment aid:** the *Verifiable completion criteria* of each lesson (passing tests + checklist) are
 designed to serve as observable evidence an assessor can inspect.
+
+**The capstone as an assessment event.** Lesson 48 provides a competency-based record: ten criteria, each scored 0 to 3 with named observable evidence
+(a demonstration, the repository, oral questions), and the rule "Competent only if every criterion scores at least 2". It is an
+*indicative* tool, written without access to an assessment centre's forms; map it to the current Training Regulations and
+your centre's procedures before using it for certification.
+
+**Practical note.** Where a competency asks for deployment, the course teaches packaging (Docker), configuration from the environment and health
+checks, and explains hosting options. It does not require a hosting account, and Docker itself is optional (the instructor guide gives
+an assessment alternative).

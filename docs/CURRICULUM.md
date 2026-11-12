@@ -15,8 +15,8 @@ Milestones (M1–M7) are runnable snapshots of the Inventory & Sales System.
 | 8 | Databases II | 29 JDBC ✅ · 30 Repository pattern ✅ · 31 Transactions (a sale is all-or-nothing) ✅ · 32 Migrations ✅ | **M5** Database-backed app ✅ (end of lesson 32) |
 | 9 | HTTP & REST, Spring Boot intro | 33 How the web works ✅ · 34 REST design ✅ · 35 JSON ✅ · 36 Spring Boot "Hello" ✅ | |
 | 10 | Spring Boot | 37 Controllers/services ✅ · 38 Spring Data JPA ✅ · 39 Validation & errors ✅ · 40 Testing with MockMvc ✅ | **M6** REST API ✅ (end of lesson 40) |
-| 11 | Security & quality | 41 Auth basics · 42 Roles (admin/cashier) · 43 CI pipeline · 44 API docs (OpenAPI) | |
-| 12 | Ship it | 45 Docker · 46 Deploy · 47 Monitoring & health checks · 48 Capstone & portfolio | **M7** Deployed application |
+| 11 | Security & quality | 41 Auth basics ✅ · 42 Roles (admin/cashier) ✅ · 43 CI pipeline ✅ · 44 API docs (OpenAPI) ✅ | |
+| 12 | Ship it | 45 Docker ✅ · 46 Deploy ✅ · 47 Monitoring & health checks ✅ · 48 Capstone & portfolio ✅ | **M7** Secured, documented, containerised, monitored API ✅ (end of lesson 48) |
 
 Each lesson ≈ 5 hours (guided + lab); 48 lessons ≈ 240 h. Weeks 1, 6 and 12 include a review/assessment block.
 
@@ -28,7 +28,10 @@ Each lesson ≈ 5 hours (guided + lab); 48 lessons ≈ 240 h. Weeks 1, 6 and 12 
 | 6 | Student fixes a failing test via TDD and submits a PR |
 | 8 | Student explains a transaction and why a sale needs one |
 | 10 | Student adds a new API endpoint with a test |
-| 12 | Capstone demo: deployed app + README + 5-minute walkthrough |
+| 11 | Student explains 401 versus 403 and shows a green CI run on their own repository |
+| 12 | Capstone demo: a working app (run locally or from a container) + green CI badge + README + 5-minute walkthrough (rubric in lesson 48) |
 
 ## Current implementation status
-Lessons 01–40 and milestones M1, M2, M3, M4, M5 and M6 are complete and CI-verified. Everything else is planned in [ROADMAP.md](../ROADMAP.md).
+All 48 lessons and all seven milestones (M1 to M7) are implemented and CI-verified. Lesson 48's `solution/` is the finished M7 reference system. Ideas for further work are in [ROADMAP.md](../ROADMAP.md); instructors: see [INSTRUCTOR-GUIDE.md](INSTRUCTOR-GUIDE.md).
+
+The deployment in M7 means "ready to deploy": containerised, configured from the environment, with health checks. No lesson requires a hosting account, and no deployment to a real provider is part of the repository (lesson 46 explains the options and their limits honestly).
